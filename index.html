@@ -3,9 +3,233 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A/B Testing Handin Webpage</title>
+    <title>A/B Testing Handin</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />        
+
 </head>
 <body>
+    <!-- NAVBAR -->
+    <nav>
+        <div class="nav-nav">
+            <div class="nav-holder nav-left">
+                <span class="nav-link nav-link-main">
+                    <a aria-label="Title" class="ul ul-1" href="#" target="_self">A/B Testing</a>
+                </span>
+            </div>
+            <div class="nav-holder nav-left">
+                <span class="nav-link">
+                    <a class="ul ul-1" href="#context" target="_self">Context</a>
+                </span>
+                <span class="nav-link">
+                    <a class="ul ul-2" href="#p1" target="_self">Data Collection</a>
+                </span>
+                <span class="nav-link">
+                    <a class="ul ul-3" href="#p2" target="_self">Creating Hypotheses</a>
+                </span>
+                <span class="nav-link">
+                    <a class="ul ul-4" href="#p3" target="_self">Analysis/Testing</a>
+                </span>
+                <span class="nav-link">
+                    <a class="ul ul-5" href="#p4" target="_self">Summary</a>
+                </span>
     
-</body>
+            </div>
+        </div>
+    </nav>
+
+    <h1 class="main-header">A/B Testing Handin</h1>
+    <!-- CONTEXT SETTING -->
+    <section id="context" class="background">
+        <h1 class="context-head">Context</h1>
+        <div class="context-paragraph">
+            <p >The main purpose of this project is to look at the difference between two interfaces where the only difference is a small change 
+                to compare the old version (i.e., Version A) while the altered version (i.e., Version B). The task for this particular project was the following: 
+            </p>
+            <div class="task-contain">
+                <button class="task-button">Schedule an appointment with Adam Ng, MD at Morristown Medical Center on April 23, 2024</button>
+
+            </div>
+            <p>Therefore, the main overarching question that we want to answer in this project is whether or not the change that we made in Version B will 
+                lead to a statistically significant difference in certain metrics that we can measure in users. A/B allows us to test if certain designs 
+                have positive/negative effects because if there is no statistically significant difference, then that means that the change in Version B 
+                is irrelevant/unnecessary. However, if a change is statistically significant, then that means that this change could positively affect the 
+                overall usability of the interface. Therefore, in this project, we will explore if such a small change will have a great impact on certain metrics 
+                that we will collect, test, and measure. 
+            </p>
+        </div>
+       
+
+    </section>
+
+    <!-- PART 1: DATA Collection  -->
+    <section id="p1"class="p1">
+        <h1 class="part1">Part 1: Data Collection</h1>
+        <div class="context-paragraph">
+            <p>
+                The name of the website that we are trying to improve the design of is called MEDx, an all-inclusive interface where you can schedule and see appointments 
+                with nearby doctors, take care of payments and prescriptions, and much more. However, as stated in the context section above, our main task is to schedule
+                 an appointment with Adam Ng, MD at Morristown Medical Center on April 23, 2024. Therefore, to assist with this task, the small change that I made was to change 
+                 the color of the button to press to a dark blue color to try to indicate to the user that this is the button to click as it is the only button to press. The 
+                 differences in Version A and Version B are noted below. 
+            </p>
+
+        </div>
+    <div class="version-diff-contain">
+        <div class="versionA">
+            <h3 class="sub-section">Version A</h3>
+            <img src="assets/versionA.png" alt="versionA">
+        </div>
+        <div class="versionB">
+            <h3 class="sub-section">Version B</h3>
+            <img src="assets/versionB.png" alt="versionB">
+
+        </div>
+    </div>
+    <div class="context-paragraph">
+        <p>
+            As you can see, the button that you need to press to complete the task is shaded in a dark blue color in Version B while the rest 
+            of the buttons are greyed out to make the user shy away from clicking those buttons. This is the only change that I made from Version A to 
+            Version B. 
+        </p>
+    </div>
+
+        
+
+    </section>
+
+    <!-- PART 2: CREATING HYPOTHESES -->
+    <section id="p2" class="p2">
+        <h1 class="part2">Part 2: Creating Hypotheses</h1>
+        <div class="context-paragraph">
+            <h3 class="sub-section">Creating Hypotheses</h3>
+            <p class="p2-response">Now, that I've collected our own data and participated in testing my classmates' designs in studio, we will 
+                now create null and alternative hypotheses for each of the following three data types: 
+            </p>
+            <br>
+            <ul>
+                <!-- MISCLICK RATE  -->
+                <li>
+                    <span class="underline">Misclick Rate</span>: the frequency with which users click something else on the page before finding the correct button for the task
+                    <ul class="sub-bullet">
+                        <li>
+                            <span class="underline">Null Hypothesis</span>: On average, Version B will have the same misclick rate when compared with Version A. 
+                        </li>
+                        <li>
+                            <span class="underline">Prediction</span>: I predict that I will end up rejecting this null hypothesis. The reason why is that in Version B, I specifically 
+                            colored-in the button that needs to be clicked on to complete the task, so I predict that will limit the number of times that a user
+                            would click on an incorrect portion of the interface as they would naturally gravitate towards the only button that is colored-in. 
+                        </li>
+                        <li>
+                            <span class="underline">Alternative Hypothesis</span>: On average, Version B will have a smaller misclick rate when compared with Version A. 
+                        </li>
+                        <li>
+                            <span class="underline">Reasoning</span>: The reasoning behind my alternative hypothesis is that in Version B, since I colored-in the button 
+                            that needs to be pressed to complete the task, this would lower the chance that a user clicks on a different part of the interface. This means 
+                            that the misclick rate should be smaller than that of Version A as fewer incorrect clicks are made. 
+                        </li>
+                    </ul>
+                </li>
+                <br>
+                <!-- TIME ON PAGE -->
+                <li>
+                    <span class="underline">Time on Page</span>: time spent on the webpage for each user group
+                    <ul class="sub-bullet">
+                        <li>
+                            <span class="underline">Null Hypothesis</span>: On average, Version B will have the same time on page when compared to Version A.
+                        </li>
+                        <li>
+                            <span class="underline">Prediction</span>: I predict that I will end up rejecting the null hypothesis. The reason for this is because due to the change that I made, the 
+                            users will spend less time misclicking and hesitating to complete the task. This means that the overall time spent on the webpage will decrease leading to us rejecting the null hypothesis.
+                        </li>
+                        <li>
+                            <span class="underline">Alternative Hypothesis</span>: On average, Version B will have a lower time on page when compared to Version A. 
+                        </li>
+                        <li>
+                            <span class="underline">Reasoning</span>: The reasoning behind my alternative hypothesis is that due to the change made in Version B, people will 
+                            misclick less which leads to a fast completion of the task which leads to a lower time spent on the webpage. Therefore, that's why I conclude that people will spend more 
+                            time on Version A when compared to Version B. 
+                        </li>
+                    </ul>
+                </li>
+                <br>
+                <!-- DID SUCCEED -->
+                <li>
+                    <span class="underline">Did Succeed</span>: a metric of our own choosing! The specific method that I chose was <span class="italicize">did_succeed</span> which is a boolean
+                    flag that checks to see if the user has successfully completed the task. 
+                    <ul class="sub-bullet">
+                        <li>
+                            <span class="underline">Null Hypothesis</span>: The proportion of users who successfully complete the task in Version B is the same as the proportion of users 
+                            who successfully complete the task in Version A. 
+                        </li>
+                        <li>
+                            <span class="underline">Prediction</span>: I predic that I will fail to reject the null hypothesis. The reason for this is that the purpose of A/B testing is not 
+                            to necessarily improve the proportion of success, but rather, to make the experience more seamless for the user. Since in Version A, we randomly tested until someone 
+                            was able to complete the task, I predict that there won't be differences in this metric. 
+                        </li>
+                        <li>
+                            <span class="underline">Alternative Hypothesis</span>: The proportion of users who successfully complete the task in Version B is greater than the proportion of 
+                            users who successfully complete the task in Version A. 
+                        </li>
+                        <li>
+                            <span class="underline">Reasoning</span>: The reason why I chose this altenrative hypothesis is because due to the improvement made in Version B, it is hard 
+                            to see the proportion of success go down, meaning that it makes sense for an alternative hypothesis to show a greater proprotion in Version B. 
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+       
+    <!-- ANALYSIS & TESTING  -->
+    <section id="p3" class="p3">
+        <h1 class="part3">Part 2: Creating Hypotheses</h1>
+        <div class="context-paragraph">
+            <p class="p3-response">For this part, using all of the sketches, lo-fi wireframes, and hi-fi prototypes that I created before, I redesigned Grandma's Country Kitchen 
+                using HTML/CSS. While it isn't fully interactive, the main overall design and layout of the website is included. Additionally, 
+                it's important to note that the final design wasn't exactly the same as the final mockup which can happen in the development phase, but for the most part, 
+                the final redesign reflects the hifi-prototypes. Additionally, when testing accessibility, I have the following screenshot of the 
+                <a href="https://wave.webaim.org/report#/https://justinshin6.github.io/responsive_redesign/" target="_blank">WebAIM WAVE report</a>.
+                <img src="assets/final_webaim.png" alt="final webaim">
+                While there is just one contrast error due to the "see menu" button, for the most part, there aren't any major errors detected. Additionally, to try to make 
+                this website accessible to screenreaders, I've included 31 aria-labels throughout my HTML. 
+                Click on the buttons below to see the difference!
+            </p>
+        </div>
+
+        <div class="buttons">
+            <a target="_blank" href="https://grandmas-kitchen-hb.edan.io/">
+                <button class="old-website">Click to go to Old Website</button>
+            </a>
+            <span class="arrow"></span>
+            <a target="_blank" href="https://justinshin6.github.io/responsive_redesign/">
+                <button class="new-website">Click to go to New Website</button>
+            </a>
+        </div>
+        <div class="context-paragraph">
+            <p class="p3-response">Photos of the three modes, Desktop, Tablet, and Phone, illustrate how Grandma's Country Kitchen is now responsive! </p>
+        </div>
+        <div class="final-images">
+            <h3 class="sub-section">Desktop:</h3>
+            <img src="assets/desktop_final.png" alt="desktop final">
+            <div class="sub-row">
+                <div class="tablet">
+                    <h3 class="sub-section">Tablet:</h3>
+                    <img src="assets/tablet_final.png" alt="tablet final">
+    
+                </div>
+                <div class="phone">
+                    <h3 class="sub-section">Phone:</h3>
+                    <img src="assets/phone_final.png" alt="phone final">
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section id="p4" class="p4">
+        <h1 class="part4">Part 4: Summary</h1>
+        <div class="context-paragraph">
+            <p class="p3-response">Thank you so much!!</p>
+        </div>
+    </section>
+    </body>
 </html>
