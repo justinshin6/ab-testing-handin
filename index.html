@@ -198,7 +198,9 @@
             <p>
                 For this portion of the assignment, for each of the three metrics, we need to conduct a statistical test to determine 
                 whether the difference between versions A and B are statistically significant. The three tests that we can conduct are the
-                One-Tailed T-Test, the Two-Tailed T-Test, and the Chi-Squared Test. 
+                One-Tailed T-Test, the Two-Tailed T-Test, and the Chi-Squared Test. Additionally, for our null hypotheses, we will set our 
+                α = 0.05. This means that if our p-value is smaller than α = 0.05, then our evidence is statistically significant enough to 
+                reject our null hypothesis. 
             </p>
         </div>
         <!-- MISCLICK RATE -->
@@ -287,6 +289,29 @@
                 and the data for Version A on Sample B to calculate the P value for (Version B < Version A) instead of the other way around. The screenshot above 
                 shows this change. 
             </p>
+            <ul>
+                <li>
+                    <span class="underline">Averages</span> - When comparing the averages of Version B and Version A, we can see that Version B has a lower average when 
+                    compared to Version A. The averages are 2 and 6.4 respectively for Version B and Version A which supports our alternative hypothesis that Version B will 
+                    have a smaller average. 
+                </li>
+                <li>
+                    <span class="underline">Variances</span> - When comparing the variances of Version B and Version A, we can see that Version B has a much smaller variance. I predict 
+                    this is because people are less hesitant or confused when completing the task in Version B which will lead to a more consistent spread of clicks when compared to Version A. 
+                </li>
+                <li>
+                    <span class="underline">T-Score</span> - We have a t-score of -2.78 which means that there is a difference between the two groups. More specifically, it means that the 
+                    average of Version B is lower than the average of Version A. 
+                </li>
+                <li>
+                    <span class="underline">P-Value</span> - We have a p-value of 0.006 meaning that there is a 0.6% chance that there is no difference between the two groups. 
+                    Since we know that α = 0.05 > p-value = 0.006, this means that we can reject the null hypothesis. 
+                </li>
+                <li>
+                    <span class="underline">Conclusion</span> - Overall, after an analysis on the outputted statistics, I conclude that we reject our null hypothesis and conclude that there is statistically significant evidence to show that the 
+                    alternative hypothesis is true. 
+                </li>
+            </ul>
         </div>
         </div>
 
@@ -294,7 +319,37 @@
     <section id="p4" class="p4">
         <h1 class="part4">Part 4: Summary</h1>
         <div class="context-paragraph">
-            <p class="p3-response">Thank you so much!!</p>
+            <p>
+                In this section, I will evaluate the results from our tests in the previous section. First, it seems like the small change in design in Version B is a success as in 
+                every single one of my tests, we were able to reject the null hypothesis and conclude that there is statistically significant evidence to show that the 
+                alternative hypothesis is true. However, it is important to consider that in the data collection process, I was only able to collect samples from 16 different, random users. 
+                In the real world, it would be ideal to collect data from a greater sample of users, so due to the small sample size of this experiment, it is important to not extrapolate these results 
+                to a greater population. However, the data does seem to be compelling, even for such a small sample. We will go through each metric individually: 
+            </p>
+            <ul>
+                <li>
+                    <span class="underline">Misclick Rate</span> - In this metric, we can see that in the expected values grid, the expected frequency for Veresion B is way smaller
+                    than that of Version A which signifies that Version B leads to a lower misclick rate. The potential reason behind this is that due to the colored-in button, people were less 
+                    likely to click on the wrong places which leads to this smaller expected frequency. 
+                </li>
+                <li>
+                    <span class="underline">Time on Page</span> - In this metric, we can see that the average time spent on Version B is way smaller than that of Version A. Additionally, due to similar 
+                    variances between the two groups, we can conclude that there are not any huge outliers in each user group. The potential reason behind this is that due to the change in Version B, people 
+                    were less hesitant and knew exactly what to do to complete the task at hand, so overall, it leads to a smaller amount of time spent on the website completing the task. This is related to the previous
+                    metric because if there are more misclicks, people will spend more time on the task. Therefore, the lower misclicks in Version B is consistent with the lower amount of time spent on the interface. 
+                </li>
+                <li>
+                    <span class="underline">Number of Clicks </span> - In this metric, it is very apparent that the change in Version B is statistically significant. First, the average number of clicks 
+                    is lower in Version B. This could be due to the lower number of misclicks as seen in the metric above. The variance is lower in Version B. This illustrates that users in 
+                    Version B were more consistent, meaning that in general, people had the same idea of how to complete the task. Additionally, when looking at the data itself, we can see that the mode = 2
+                    by an overwhelming margin. The reason why is because 2 clicks is the least number of clicks required to complete the task, and since 14/16 people were able to complete the task in 2 clicks, 
+                    this illustrates how people were not confused on completing the task at all. 
+                </li>
+                <li>
+                    <span class="underline">Overall</span> - After analyzing the statistical measures, Version B seems to have a statistically significant improvement when compared to Version A. This illustrates the 
+                    power of A/B Testing and how it can incorporated in numerous different parts of the interface to improve the overall usability of an interface for the user. 
+                </li>
+            </ul>
         </div>
     </section>
     </body>
